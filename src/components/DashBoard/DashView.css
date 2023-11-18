@@ -1,0 +1,59 @@
+.dashContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 15px; 
+}
+  
+  .dashCardContainer {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+    margin-bottom: 15px;
+  }
+  
+  .dashCardHeading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    
+  }
+  
+  .leftView {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightView {
+    display: flex;
+    align-items: center;
+  }
+  
+  .imageContainer {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .dashList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .dashCardContainer {
+      flex: 1 0 100%; 
+      max-width: none; 
+    }
+  }
